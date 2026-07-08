@@ -20,19 +20,19 @@ function geoShare(d) {
 }
 const SS = BASE + "/assets/sitios/";
 const POI = {
-  "EEM-0819-A": { n: "Cubo Digital Magnocentro \xB7 Interlomas", lat: 19.402051, lng: -99.271914, med: "18.7 \xD7 10 m", imp: 4e6, tipo: "Cubo digital", t: 1e6, dir: "Blvd. Magnocentro y Blvd. Interlomas, Huixquilucan", aud: "NSE ABC+ \xB7 AAA \xB7 Interlomas", niv: "Alto", ben: "Presencia Walmart en un punto de alt\xEDsimo flujo con exclusividad de categor\xEDa en Interlomas.", cad: "Walmart, City Market, Soriana y Chedraui a la redonda", wm: "assets/sitios/EEM-0819-A-wm.jpg" },
-  "EEM-18177-B": { n: "Pantalla LED Toreo \xB7 Perif\xE9rico", lat: 19.460182, lng: -99.222014, med: "17.28 \xD7 8.64 m", imp: 63e5, tipo: "Pantalla LED digital", t: 65e3, dir: "Blvd. M. \xC1vila Camacho (Perif\xE9rico) y Av. Emiliano Zapata, Naucalpan", aud: "Vehicular masivo \xB7 Perif\xE9rico / Toreo", niv: "Alto", ben: "Entrada a CDMX por Perif\xE9rico: una de las vialidades con m\xE1s aforo del pa\xEDs.", cad: "Walmart, Bodega Aurrer\xE1 y Soriana a la redonda", wm: "assets/sitios/EEM-18177-B-wm.jpg" },
-  "LMK-TOREO": { n: "Landmark Toreo \xB7 Perif\xE9rico", lat: 19.4598, lng: -99.2155, med: "Lona \xB7 43.4 \xD7 5.20 m", imp: 63e5, tipo: "Lona landmark", t: 1e6, dir: "Perif\xE9rico Norte, Toreo, Naucalpan", aud: "Vehicular masivo \xB7 Toreo", niv: "Alto", ben: "La ubicaci\xF3n con m\xE1s impactos mensuales del corredor: entrada a CDMX por Perif\xE9rico.", cad: "Walmart, Bodega Aurrer\xE1 y Soriana a la redonda", wm: "assets/sitios/OPP-TOREO.jpg" },
-  "GLORIETA-LMK": { n: "Landmark Glorieta Interlomas \xB7 Walmart", lat: 19.39, lng: -99.2925, med: "Glorieta 60 \xD7 29 m \xB7 Spark 19 m \xB7 Pantalla 3D", imp: 22e5, tipo: "Landmark volum\xE9trico + 3D", t: 12e5, dir: "Glorieta Av. San Mateo Santa Rosa / Blvd. Palmas Hills, Interlomas", aud: "NSE ABC+ \xB7 coraz\xF3n de Interlomas", niv: "Alto", ben: "Dominio de marca en el punto m\xE1s ic\xF3nico de Interlomas, con producci\xF3n 3D y viralidad en redes.", cad: "Walmart, City Market y Chedraui a la redonda", wm: "assets/sitios/GLORIETA-LMK-wm.jpg" },
-  "EEM-17672-A": { n: "Pantalla LED Paseo Interlomas", lat: 19.396232, lng: -99.281112, med: "15.36 \xD7 3.84 m", imp: 1835257, tipo: "Pantalla LED", t: 85e3, dir: "Vialidad frente a Paseo Interlomas, Huixquilucan", aud: "Shoppers \xB7 frente a Liverpool", niv: "Medio", ben: "Impacto directo sobre shoppers de alto poder adquisitivo en el corredor comercial.", cad: "Walmart, City Market y Chedraui a la redonda", wm: "assets/sitios/EEM-17672-A-wm.jpg" },
-  "EEM-17672-B": { n: "Puente Paseo Interlomas", lat: 19.3968, lng: -99.2816, med: "15.10 \xD7 3.80 m", imp: 9e5, tipo: "Puente peatonal", t: 65e3, dir: "Frente a Hospital \xC1ngeles Interlomas, Huixquilucan", aud: "Vehicular \xB7 Hospital \xC1ngeles", niv: "T\xE1ctico", ben: "Refuerzo t\xE1ctico frente a Hospital \xC1ngeles y Paseo Interlomas.", cad: "Walmart y Chedraui a la redonda", wm: "assets/sitios/EEM-17672-B-wm.jpg" },
-  "BEM-17344-A": { n: "Muro CC Interlomas", lat: 19.396262, lng: -99.288435, med: "8.00 \xD7 15.00 m", imp: 11e5, tipo: "Muro", t: 35e4, dir: "Entrada CC Interlomas, Huixquilucan", aud: "Shoppers \xB7 entrada principal", niv: "T\xE1ctico", ben: "\xDAltima impresi\xF3n antes de entrar al Centro Comercial Interlomas.", cad: "Walmart, City Market y Soriana a la redonda", wm: "assets/sitios/BEM-17344-A-wm.jpg" },
-  "EEM-17427-B": { n: "Puente Hueyetlaco", lat: 19.387794, lng: -99.278823, med: "10.60 \xD7 5.20 m", imp: 85e4, tipo: "Puente peatonal", t: 12e4, dir: "Circulaci\xF3n Santa Fe hacia Interlomas, Huixquilucan", aud: "Vehicular \xB7 Santa Fe\u2013Interlomas", niv: "T\xE1ctico", ben: "Captura el flujo diario Santa Fe\u2013Interlomas.", cad: "Walmart y Bodega Aurrer\xE1 a la redonda", wm: "assets/sitios/EEM-17427-B-wm.jpg" },
-  "EEM-15935-B": { n: "Unipolar Vialidad de la Barranca", lat: 19.388173, lng: -99.2786, med: "12.90 \xD7 10.80 m", imp: 14e5, tipo: "Unipolar", t: 6e4, dir: "Vialidad de la Barranca hacia Santa Fe, Huixquilucan", aud: "Alta plusval\xEDa \xB7 Bosques de las Lomas", niv: "Medio", ben: "Audiencia de alt\xEDsima plusval\xEDa rumbo a Santa Fe y Bosques.", cad: "Walmart, City Market y Soriana a la redonda", wm: "assets/sitios/EEM-15935-B-wm.jpg" }
+  "EEM-0819-A": { n: "Cubo Digital Magnocentro \xB7 Interlomas", lat: 19.402051, lng: -99.271914, med: "18.7 \xD7 10 m", imp: 4e6, tipo: "Cubo digital", t: 1e6, dir: "Blvd. Magnocentro y Blvd. Interlomas, Huixquilucan", aud: "NSE ABC+ \xB7 AAA \xB7 Interlomas", niv: "Alto", ben: "Presencia Walmart en un punto de alt\xEDsimo flujo con exclusividad de categor\xEDa en Interlomas.", cad: "Walmart, City Market, Soriana y Chedraui a la redonda", desc: "Frente a CC Interlomas, Toyota y concesionarias. Cubo digital con exclusividad de categor\xEDa.", reco: "Creatividad de precio/temporada adaptada al formato; rotaci\xF3n por campa\xF1a.", campanas: ["Precios bajos todos los d\xEDas", "Buen Fin", "Walmart Pass"], wm: "assets/sitios/EEM-0819-A-wm.jpg" },
+  "EEM-18177-B": { n: "Pantalla LED Toreo \xB7 Perif\xE9rico", lat: 19.460182, lng: -99.222014, med: "17.28 \xD7 8.64 m", imp: 63e5, tipo: "Pantalla LED digital", t: 65e3, dir: "Blvd. M. \xC1vila Camacho (Perif\xE9rico) y Av. Emiliano Zapata, Naucalpan", aud: "Vehicular masivo \xB7 Perif\xE9rico / Toreo", niv: "Alto", ben: "Entrada a CDMX por Perif\xE9rico: una de las vialidades con m\xE1s aforo del pa\xEDs.", cad: "Walmart, Bodega Aurrer\xE1 y Soriana a la redonda", desc: "Pantalla digital sobre Perif\xE9rico (Blvd. \xC1vila Camacho) y Av. Emiliano Zapata, l\xEDmite CDMX-Naucalpan (Toreo); vista de sur a norte hacia Ciudad Sat\xE9lite.", reco: "Spot de 10 s con movimiento; hasta 6 clientes en rotaci\xF3n por minuto.", campanas: ["Precios bajos todos los d\xEDas", "Buen Fin", "Walmart Pass"], wm: "assets/sitios/EEM-18177-B-wm.jpg" },
+  "LMK-TOREO": { n: "Landmark Toreo \xB7 Perif\xE9rico", lat: 19.4598, lng: -99.2155, med: "Lona \xB7 43.4 \xD7 5.20 m", imp: 63e5, tipo: "Lona landmark", t: 1e6, dir: "Perif\xE9rico Norte, Toreo, Naucalpan", aud: "Vehicular masivo \xB7 Toreo", niv: "Alto", ben: "La ubicaci\xF3n con m\xE1s impactos mensuales del corredor: entrada a CDMX por Perif\xE9rico.", cad: "Walmart, Bodega Aurrer\xE1 y Soriana a la redonda", desc: "Lona landmark sobre Perif\xE9rico Norte, entrada a CDMX por Toreo \u2014 m\xE1ximos impactos del corredor.", reco: "Creatividad de gran formato, alto contraste y lectura a distancia.", campanas: ["Precios bajos todos los d\xEDas", "Buen Fin", "Hot Sale"], wm: "assets/sitios/OPP-TOREO.jpg" },
+  "GLORIETA-LMK": { n: "Landmark Glorieta Interlomas \xB7 Walmart", lat: 19.39, lng: -99.2925, med: "Glorieta 60 \xD7 29 m \xB7 Spark 19 m \xB7 Pantalla 3D", imp: 22e5, tipo: "Landmark volum\xE9trico + 3D", t: 12e5, dir: "Glorieta Av. San Mateo Santa Rosa / Blvd. Palmas Hills, Interlomas", aud: "NSE ABC+ \xB7 coraz\xF3n de Interlomas", niv: "Alto", ben: "Dominio de marca en el punto m\xE1s ic\xF3nico de Interlomas, con producci\xF3n 3D y viralidad en redes.", cad: "Walmart, City Market y Chedraui a la redonda", desc: "Landmark volum\xE9trico Walmart Spark en la Glorieta de Interlomas (Av. San Mateo Santa Rosa / Blvd. Palmas Hills) + Pantalla 3D en Paseo Interlomas + activaci\xF3n FOOH en redes.", reco: "Paquete integral: landmark + DOOH 3D + FOOH. Temporalidad m\xEDnima 3 meses.", campanas: ["Precios bajos todos los d\xEDas", "Buen Fin", "Walmart Pass"], wm: "assets/sitios/GLORIETA-LMK-wm.jpg" },
+  "EEM-17672-A": { n: "Pantalla LED Paseo Interlomas", lat: 19.396232, lng: -99.281112, med: "15.36 \xD7 3.84 m", imp: 1835257, tipo: "Pantalla LED", t: 85e3, dir: "Vialidad frente a Paseo Interlomas, Huixquilucan", aud: "Shoppers \xB7 frente a Liverpool", niv: "Medio", ben: "Impacto directo sobre shoppers de alto poder adquisitivo en el corredor comercial.", cad: "Walmart, City Market y Chedraui a la redonda", desc: "Frente a Liverpool y CC Paseo Interlomas.", reco: "Creatividad de precio/temporada adaptada al formato; rotaci\xF3n por campa\xF1a.", campanas: ["Precios bajos todos los d\xEDas", "Buen Fin", "Walmart Pass"], wm: "assets/sitios/EEM-17672-A-wm.jpg" },
+  "EEM-17672-B": { n: "Puente Paseo Interlomas", lat: 19.3968, lng: -99.2816, med: "15.10 \xD7 3.80 m", imp: 9e5, tipo: "Puente peatonal", t: 65e3, dir: "Frente a Hospital \xC1ngeles Interlomas, Huixquilucan", aud: "Vehicular \xB7 Hospital \xC1ngeles", niv: "T\xE1ctico", ben: "Refuerzo t\xE1ctico frente a Hospital \xC1ngeles y Paseo Interlomas.", cad: "Walmart y Chedraui a la redonda", desc: "Frente a Hospital \xC1ngeles Interlomas y Paseo Interlomas; lona front con jareta oculta.", reco: "Creatividad de precio/temporada adaptada al formato; rotaci\xF3n por campa\xF1a.", campanas: ["Precios bajos todos los d\xEDas", "Buen Fin", "Walmart Pass"], wm: "assets/sitios/EEM-17672-B-wm.jpg" },
+  "BEM-17344-A": { n: "Muro CC Interlomas", lat: 19.396262, lng: -99.288435, med: "8.00 \xD7 15.00 m", imp: 11e5, tipo: "Muro", t: 35e4, dir: "Entrada CC Interlomas, Huixquilucan", aud: "Shoppers \xB7 entrada principal", niv: "T\xE1ctico", ben: "\xDAltima impresi\xF3n antes de entrar al Centro Comercial Interlomas.", cad: "Walmart, City Market y Soriana a la redonda", desc: "Entrada principal del Centro Comercial Interlomas.", reco: "Creatividad de precio/temporada adaptada al formato; rotaci\xF3n por campa\xF1a.", campanas: ["Precios bajos todos los d\xEDas", "Buen Fin", "Walmart Pass"], wm: "assets/sitios/BEM-17344-A-wm.jpg" },
+  "EEM-17427-B": { n: "Puente Hueyetlaco", lat: 19.387794, lng: -99.278823, med: "10.60 \xD7 5.20 m", imp: 85e4, tipo: "Puente peatonal", t: 12e4, dir: "Circulaci\xF3n Santa Fe hacia Interlomas, Huixquilucan", aud: "Vehicular \xB7 Santa Fe\u2013Interlomas", niv: "T\xE1ctico", ben: "Captura el flujo diario Santa Fe\u2013Interlomas.", cad: "Walmart y Bodega Aurrer\xE1 a la redonda", desc: "Circulaci\xF3n de Santa Fe hacia Interlomas.", reco: "Creatividad de precio/temporada adaptada al formato; rotaci\xF3n por campa\xF1a.", campanas: ["Precios bajos todos los d\xEDas", "Buen Fin", "Walmart Pass"], wm: "assets/sitios/EEM-17427-B-wm.jpg" },
+  "EEM-15935-B": { n: "Unipolar Vialidad de la Barranca", lat: 19.388173, lng: -99.2786, med: "12.90 \xD7 10.80 m", imp: 14e5, tipo: "Unipolar", t: 6e4, dir: "Vialidad de la Barranca hacia Santa Fe, Huixquilucan", aud: "Alta plusval\xEDa \xB7 Bosques de las Lomas", niv: "Medio", ben: "Audiencia de alt\xEDsima plusval\xEDa rumbo a Santa Fe y Bosques.", cad: "Walmart, City Market y Soriana a la redonda", desc: "Sobre Vialidad de la Barranca hacia Santa Fe y Bosques; iluminado.", reco: "Creatividad de precio/temporada adaptada al formato; rotaci\xF3n por campa\xF1a.", campanas: ["Precios bajos todos los d\xEDas", "Buen Fin", "Walmart Pass"], wm: "assets/sitios/EEM-15935-B-wm.jpg" }
 };
 const OPORT = [
   { id: "OPP-HAMB", lat: 19.42531, lng: -99.16688, n: "Landmark Hamb\xFArgo \xB7 Col. Ju\xE1rez", med: "12.9 \xD7 7.2 m \xB7 Pantalla LED", imp: 41e5, precio: "$750,000", t: 75e4, img: SS + "OPP-HAMB.jpg", dir: "Hamburgo esq. Florencia, Col. Ju\xE1rez, CDMX" },
-  { id: "OPP-MEGA", lat: 19.356059, lng: -99.144004, n: "Mega Valla \xB7 Churubusco", med: "108 \xD7 3.05 m", imp: 12e5, precio: "$630,000", t: 63e4, img: SS + "MPCX-19072-A.jpg", dir: "Calz. de Tlalpan esq. R\xEDo Churubusco, Coyoac\xE1n, CDMX" },
+  { id: "OPP-MEGA", lat: 19.356059, lng: -99.144004, n: "Mega Valla \xB7 Churubusco", med: "108 \xD7 3.05 m \xB7 la valla seguida m\xE1s grande de CDMX", imp: 12e5, precio: "$630,000", t: 63e4, img: SS + "OPP-MEGA.jpg", dir: "Calz. de Tlalpan esq. R\xEDo Churubusco, Coyoac\xE1n, CDMX" },
   { id: "OPP-SAT", lat: 19.5092, lng: -99.2372, n: "Muro Galer\xEDas Sat\xE9lite \xB7 Fachada", med: "44 \xD7 8 m \xB7 3 caras", imp: 54e5, precio: "$750,000", t: 75e4, img: SS + "OPP-SAT.jpg", dir: "Perif\xE9rico Norte, Galer\xEDas Sat\xE9lite, Naucalpan" },
   { id: "OPP-TOREO", lat: 19.4598, lng: -99.2155, n: "Landmark Toreo \xB7 Perif\xE9rico", med: "Lona \xB7 43.4 \xD7 5.2 m", imp: 63e5, precio: "$1,000,000", t: 1e6, img: SS + "OPP-TOREO.jpg", dir: "Perif\xE9rico Norte, Toreo, Naucalpan" },
   { id: "OPP-GLORIETA", lat: 19.39, lng: -99.2925, n: "Landmark Glorieta Interlomas \xB7 Walmart", med: "Glorieta 60 \xD7 29 m \xB7 Spark 19 m", imp: 22e5, precio: "$1,200,000", t: 12e5, img: SS + "GLORIETA-LMK.jpg", dir: "Glorieta Av. San Mateo Santa Rosa / Blvd. Palmas Hills, Interlomas" },
@@ -161,6 +161,10 @@ async function buildPdfDoc(d) {
     spark = await pdf.embedPng(await grab(BASE + "/assets/walmart-spark-rgba.png"));
   } catch (_e) {
   }
+  const OMAP = {};
+  OPORT.forEach((o) => {
+    OMAP[o.id] = o;
+  });
   let p = pdf.addPage([W, H]);
   p.drawRectangle({ x: 0, y: 0, width: W, height: H, color: CI });
   p.drawRectangle({ x: 0, y: 0, width: W, height: H * 0.42, color: CV, opacity: 0.55 });
@@ -173,63 +177,89 @@ async function buildPdfDoc(d) {
   }
   p.drawText("CONNECTIA \xD7 WALMART \xB7 OUT OF NOISE", { x: 56, y: H - 155, size: 9, font: FB, color: CH });
   p.drawText("Connectia \xD7 Walmart", { x: 54, y: H - 215, size: 40, font: FB, color: CW });
-  p.drawText("Propuesta Out of Home", { x: 56, y: H - 249, size: 16, font: F, color: CW });
-  p.drawText("Recorrido Interlomas \xB7 Ficha t\xE9cnica por sitio", { x: 56, y: H - 271, size: 12, font: F, color: rgb(0.8, 0.78, 0.9) });
-  p.drawText("Presencia premium en el corredor de mayor plusvalia del poniente.", { x: 56, y: 120, size: 12, font: FI, color: rgb(0.85, 0.83, 0.92) });
+  p.drawText("Propuesta Out of Home \xB7 Ficha t\xE9cnica", { x: 56, y: H - 249, size: 15, font: F, color: CW });
   for (const x of selAll(d)) {
-    const pp = POI[x.id] || {};
+    const pp = POI[x.id] || OMAP[x.id] || {};
     p = pdf.addPage([W, H]);
     p.drawRectangle({ x: 0, y: 0, width: W, height: H, color: CP });
     try {
-      const img = await pdf.embedJpg(await grab(BASE + "/" + pp.wm));
-      p.drawImage(img, { x: 0, y: H - 250, width: W, height: 250 });
+      const rel = pp.wm || (pp.img ? String(pp.img).replace(BASE + "/", "") : "");
+      const img = await pdf.embedJpg(await grab(BASE + "/" + rel));
+      p.drawImage(img, { x: 0, y: H - 230, width: W, height: 230 });
     } catch (_e) {
-      p.drawRectangle({ x: 0, y: H - 250, width: W, height: 250, color: CI });
+      p.drawRectangle({ x: 0, y: H - 230, width: W, height: 230, color: CI });
     }
-    p.drawRectangle({ x: 0, y: H - 250, width: W, height: 34, color: CI, opacity: 0.55 });
-    p.drawText((x.est || "").toUpperCase(), { x: 24, y: H - 240, size: 10, font: FB, color: CY });
-    let y = H - 288;
-    p.drawText(((pp.tipo || "") + " \xB7 " + (pp.med || "")).toUpperCase(), { x: 44, y, size: 9, font: FB, color: CH });
-    y -= 26;
-    p.drawText((x.nombre || pp.n || "").slice(0, 46), { x: 42, y, size: 22, font: FB, color: CI });
+    p.drawRectangle({ x: 0, y: H - 230, width: 170, height: 26, color: CI, opacity: 0.65 });
+    p.drawText((x.est || "").toUpperCase(), { x: 16, y: H - 223, size: 9, font: FB, color: CY });
+    let y = H - 258;
+    p.drawText(((pp.tipo || "") + " \xB7 " + (pp.med || "")).toUpperCase().slice(0, 90), { x: 44, y, size: 9, font: FB, color: CH });
+    y -= 24;
+    p.drawText((x.nombre || pp.n || "").slice(0, 44), { x: 44, y, size: 20, font: FB, color: CI });
     y -= 30;
-    const stats = [["Tarifa mensual", x.tarifa ? fmt(x.tarifa) : "Cotizar"], ["Impactos/mes", impf(pp.imp)], ["Audiencia", pp.aud || "\u2014"], ["Nivel de impacto", pp.niv || "Alto"], ["Medidas", pp.med || "\u2014"], ["Tipo", pp.tipo || "\u2014"], ["Coordenadas", (pp.lat || "") + ", " + (pp.lng || "")], ["Disponibilidad", "Disponible"]];
+    const pr = x.tarifa ? fmt(x.tarifa) : pp.precio || "Cotizar";
+    const prt = pr + (x.tarifa ? " /mes" : "");
+    const bw = FB.widthOfTextAtSize(prt, 15) + 24;
+    p.drawRectangle({ x: 44, y: y - 6, width: bw, height: 30, color: CV });
+    p.drawText(prt, { x: 56, y: y + 3, size: 15, font: FB, color: CW });
+    y -= 42;
+    if (pp.desc) {
+      wrap(pp.desc, F, 11, W - 88).forEach((ln) => {
+        p.drawText(ln, { x: 44, y, size: 11, font: F, color: CD });
+        y -= 15;
+      });
+      y -= 6;
+    }
+    const stats = [["Tarifa mensual", pr], ["Impactos mensuales", impShort(pp.imp)], ["Audiencia", pp.aud || "\u2014"], ["Nivel de impacto", pp.niv || "Alto"]];
     const colX = [44, 320];
     let gy = y;
-    stats.forEach((s, i) => {
+    stats.forEach((st, i) => {
       const cx = colX[i % 2];
-      if (i % 2 === 0 && i > 0) gy -= 46;
-      p.drawText(s[0].toUpperCase(), { x: cx, y: gy, size: 8, font: F, color: rgb(0.45, 0.42, 0.5) });
-      p.drawText(String(s[1]).slice(0, 30), { x: cx, y: gy - 15, size: 12, font: FB, color: i === 0 ? CV : CD });
+      if (i % 2 === 0 && i > 0) gy -= 44;
+      p.drawText(st[0].toUpperCase(), { x: cx, y: gy, size: 8, font: F, color: rgb(0.45, 0.42, 0.5) });
+      p.drawText(String(st[1]).slice(0, 40), { x: cx, y: gy - 15, size: 11, font: FB, color: i === 0 ? CV : CD });
     });
-    y = gy - 40;
-    p.drawText("BENEFICIO PARA WALMART", { x: 44, y, size: 9, font: FB, color: CH });
-    y -= 16;
-    wrap(pp.ben || "Presencia estrat\xE9gica de Walmart en un punto de alto flujo.", F, 11, W - 88).forEach((ln) => {
-      p.drawText(ln, { x: 44, y, size: 11, font: F, color: CD });
+    y = gy - 42;
+    if (pp.ben) {
+      p.drawText("BENEFICIO PARA WALMART", { x: 44, y, size: 9, font: FB, color: CH });
       y -= 15;
-    });
-    y -= 12;
+      wrap(pp.ben, F, 11, W - 88).forEach((ln) => {
+        p.drawText(ln, { x: 44, y, size: 11, font: F, color: CD });
+        y -= 15;
+      });
+      y -= 6;
+    }
+    if (pp.reco) {
+      p.drawText("RECOMENDACI\xD3N CREATIVA", { x: 44, y, size: 9, font: FB, color: CH });
+      y -= 15;
+      wrap(pp.reco, F, 11, W - 88).forEach((ln) => {
+        p.drawText(ln, { x: 44, y, size: 11, font: F, color: CD });
+        y -= 15;
+      });
+      y -= 8;
+    }
+    if (pp.campanas && pp.campanas.length) {
+      let cx = 44;
+      pp.campanas.forEach((c) => {
+        const ww = FB.widthOfTextAtSize(c, 9) + 18;
+        if (cx + ww > W - 44) {
+          cx = 44;
+          y -= 26;
+        }
+        p.drawRectangle({ x: cx, y: y - 6, width: ww, height: 20, color: rgb(0, 83 / 255, 226 / 255) });
+        p.drawText(c, { x: cx + 9, y, size: 9, font: FB, color: CW });
+        cx += ww + 8;
+      });
+      y -= 30;
+    }
+    p.drawText("DISPONIBILIDAD", { x: 44, y, size: 9, font: FB, color: CH });
+    p.drawCircle({ x: 182, y: y + 3, size: 4, color: rgb(0.2, 0.75, 0.35) });
+    p.drawText("Disponible", { x: 192, y, size: 11, font: FB, color: CD });
+    y -= 22;
     p.drawText("CADENAS CERCANAS", { x: 44, y, size: 9, font: FB, color: CH });
-    y -= 16;
-    p.drawText(pp.cad || "Walmart y Bodega Aurrer\xE1 a la redonda", { x: 44, y, size: 11, font: FB, color: CD });
-    p.drawText("Recuerda: la disponibilidad cambia dia con dia \xB7 Sujeto a confirmacion.", { x: 44, y: 46, size: 9, font: FI, color: rgb(0.6, 0.55, 0.75) });
+    y -= 15;
+    p.drawText(String(pp.cad || "\u2014").slice(0, 80), { x: 44, y, size: 11, font: FB, color: CD });
+    p.drawText("Recuerda: la disponibilidad cambia dia con dia \xB7 Sujeto a confirmacion.", { x: 44, y: 40, size: 8, font: FI, color: rgb(0.6, 0.55, 0.75) });
   }
-  p = pdf.addPage([W, H]);
-  p.drawRectangle({ x: 0, y: 0, width: W, height: H, color: CP });
-  p.drawText("RESUMEN", { x: 56, y: H - 80, size: 9, font: FB, color: CH });
-  p.drawText("Total de la propuesta", { x: 54, y: H - 108, size: 26, font: FB, color: CI });
-  let yy = H - 150;
-  selAll(d).forEach((x) => {
-    p.drawText((x.nombre || "").slice(0, 44), { x: 56, y: yy, size: 12, font: FB, color: CD });
-    const tt = x.tarifa ? fmt(x.tarifa) : "Cotizar";
-    p.drawText(tt, { x: W - 56 - FB.widthOfTextAtSize(tt, 12), y: yy, size: 12, font: FB, color: CV });
-    yy -= 24;
-  });
-  p.drawRectangle({ x: 48, y: yy - 42, width: W - 96, height: 40, color: CV });
-  p.drawText("TOTAL MENSUAL", { x: 64, y: yy - 28, size: 13, font: FB, color: CW });
-  const gt = fmt(d.total);
-  p.drawText(gt, { x: W - 64 - FB.widthOfTextAtSize(gt, 15), y: yy - 28, size: 15, font: FB, color: CW });
   p = pdf.addPage([W, H]);
   p.drawRectangle({ x: 0, y: 0, width: W, height: H, color: CI });
   const cc = conW.scale(180 / conW.width);
